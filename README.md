@@ -54,13 +54,13 @@ Shadowsocksr-libev for OpenWrt/LEDE
    cd OpenWrt-SDK-ar71xx-*
    # 安装 feeds
    # 方案一(推荐):使用自定义feeds
-     git clone https://github.com/AlexZhuo/openwrt-feeds.git package/feeds
+     git clone https://github.com/mifaa/openwrt-feeds.git package/feeds
    # 方案二:使用官方feeds
      ./scripts/feeds update base packages
      ./scripts/feeds install zlib libopenssl libpolarssl libmbedtls libpcre
      rm -rf package/feeds/base/mbedtls/patches
    # 获取 shadowsocksr-libev Makefile
-   git clone https://github.com/AlexZhuo/openwrt-shadowsocksr.git package/shadowsocksr-libev
+   git clone https://github.com/mifaa/openwrt-shadowsocksr.git package/shadowsocksr-libev
    # 选择要编译的包 Network -> shadowsocksr-libev
    make menuconfig
    # 开始编译
