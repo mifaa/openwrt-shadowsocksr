@@ -5,6 +5,29 @@ Shadowsocksr-libev for OpenWrt/LEDE
 
 为编译[此固件][O]所需依赖包而写的Makefile,在CC 15.05,CC 15.05.1,LEDE 17.01.1 17.01.2编译成功
 
+
+Compiling for LEDE SDK ar71xx devices:
+wget https://downloads.lede-project.org/releases/17.01.4/targets/ar71xx/generic/lede-sdk-17.01.4-ar71xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
+
+tar -xf lede-sdk-17.01.4-ar71xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
+cd lede-sdk-17.01.4-ar71xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64
+
+git clone https://github.com/mifaa/openwrt-feeds.git package/feeds
+
+git clone https://github.com/mifaa/openwrt-shadowsocksr.git package/shadowsocksr-libev
+
+apt install make
+(maybe sudo apt-get install ccache build-essential)
+
+sudo apt-get install build-essential subversion libncurses5-dev zlib1g-dev gawk gcc-multilib flex 
+
+git-core gettext libssl-dev
+
+make menuconfig
+select network>shadowsocksr-libev
+
+After the compilation is finished, the generated .ipk files are placed in the bin directory.
+
 简介
 ---
 
