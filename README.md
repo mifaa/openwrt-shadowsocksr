@@ -1,6 +1,6 @@
 Shadowsocksr-libev for OpenWrt/LEDE
 ===
-版本 2.5.6  2016-稳定版
+版本 2.5.6  2016-稳定版 <-- updated for SSRR 
 
 
 为编译[此固件][O]所需依赖包而写的Makefile,在CC 15.05,CC 15.05.1,LEDE 17.01.1 17.01.2编译成功
