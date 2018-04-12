@@ -24,7 +24,7 @@ define Package/shadowsocksr-libev/Default
   SECTION:=net
   CATEGORY:=Network
   TITLE:=Lightweight Secured Socks5 Proxy
-  URL:=https://github.com/shadowsocksr/shadowsocksr-libev
+  URL:=https://github.com/mifaa/shadowsocksr-libev
 endef
 
 define Package/shadowsocksr-libev
